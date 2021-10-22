@@ -1,31 +1,27 @@
-const makePizza = function () {
-    console.log("make the base");
-    console.log("make the sauce");
-    console.log("roll out the dough");
-    console.log("top and bake");
+// Opdracht 1: Een click event vastmaken aan een button
 
-}
-//als je bovenstaande runt, dan krijg je nog geen resultaat omdat je de function geschreven hebt en nog niet heb ge-"called"
+var button= document.getElementById("mybutton");
 
-//to call the function:
-makePizza();
-
-//now call your function 3 times:
-makePizza();
-makePizza();
-makePizza();
-
-const makeSushi = function () {
-    console.log("make the rice and nori");
-    console.log("spread the rice on the nori");
-    console.log("add fillings");
-    console.log("roll the sushi");
-    console.log("cut the sushi and serve");
+button.onclick = function() {
+    alert("button clicked");
 }
 
-//change your code so that the output of your program is the steps for making sushi, three times and pizza two times
-makeSushi();
-makeSushi();
-makeSushi();
-makePizza();
-makePizza();
+// Opdracht 2: Voeg een tweede button toe aan je HTML 
+// met de tekst "Change Background", maak een klik event vast
+// aan de nieuwe button, wanneer er op de change-background-button geklikt
+// wordt, ga je de class "red-background" toevoegen aan je body element.
+
+var button2= document.getElementById("mybutton2");
+const bodybackground = document.body;
+
+button2.onclick = function() {
+   bodybackground.classList.add("red-background");
+}
+
+// Opdracht 3: met toggle de changeColor functie veranderen 
+//zodat de achtergrondkleur ook weer terug veranderd naar rood 
+//wanneer er op de knop wordt geklikt. 
+
+button2.onclick = function() {
+    bodybackground.classList.toggle("red-background");
+}
